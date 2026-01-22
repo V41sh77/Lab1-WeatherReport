@@ -37,7 +37,7 @@ public class Main {
                 dailyLowTemperature = input.nextDouble();
 
                 if (dailyHighTemperature < dailyLowTemperature) {
-                    System.out.println("❌ High temperature must be greater than or equal to low temperature.");
+                    System.out.println("High temperature must be greater than or equal to low temperature.");
                 }
             } while (dailyHighTemperature < dailyLowTemperature);
 
@@ -47,7 +47,7 @@ public class Main {
                 uvIndex = input.nextInt();
 
                 if (uvIndex < 0 || uvIndex > 11) {
-                    System.out.println("❌ UV index must be between 0 and 11.");
+                    System.out.println("UV index must be between 0 and 11.");
                 }
             } while (uvIndex < 0 || uvIndex > 11);
 
@@ -89,6 +89,7 @@ public class Main {
         } while (continueChoice.equalsIgnoreCase("yes"));
 
         input.close();
-        System.out.println("✅ Program ended.");
+        System.out.println("Program ended.");
     }
 }
+
